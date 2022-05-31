@@ -1,0 +1,11 @@
+<h1>
+  Singal R Example - Vehicle Tracking by
+  <a href="https://github.com/dafegima" target="_blank">Daniel Giraldo</a>
+</h1>
+<agm-map [zoom]="zoom" [latitude]="lat" [longitude]="lng">
+  <div *ngIf="vehicle">
+    <agm-marker [latitude]="vehicle.latitude" [longitude]="vehicle.longitude">
+      <agm-info-window>Daniel Giraldo</agm-info-window>
+    </agm-marker>
+  </div>
+</agm-map>
